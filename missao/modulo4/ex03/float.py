@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
-one_num = float(input("Me dê um número: "))
+one_num = input("Me dê um número: ")
 
-if(one_num%2 == 0):
-    print("Este número é um inteiro.")
+if_float = float(one_num)
+
+if if_float.is_integer():
+    print(f"'{one_num}' - este numero e inteiro")
 else:
-    print("Este número é um decimal.")
+    print(f"'{one_num}' - este numero e decimal")
